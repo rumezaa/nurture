@@ -8,6 +8,7 @@
 If you are using our [vercell app](https://nurture-black.vercel.app/) or running the github repo off of localhost, it is best practice to use a display size of : 398, 743. The vercell app works on all display sizes, but is specifically built for an Iphone 14 (398, 743)
 
 # Details.
+This section contains details for the alberta health hackathon.
 ## Inspiration
 We got inspired from common chat platforms such as facebook, messenger and instagram. 
 Although, we decided to put our own spin on it, creating a chat platform that better integrates with the alberta health system.
