@@ -1,7 +1,14 @@
+# Introducing nurture
+![ol](oneliner.png)
+- Use our app with your therapist
+- Using sentiment analysis : get personalized reccomendations for your messages
+- Access tools and info for FFT
+  
+# Details.
 ## Inspiration
 We got inspired from common chat platforms such as facebook, messanger and instagram. 
 Although, we decided to put our own spin on it, creating a chat platform that better integrates with the alberta health system.
-We also got inspired from therapy platforms such as betterhelp, with a tailor to both ==FFT & User experience for both the client and the therapist==
+We also got inspired from therapy platforms such as betterhelp, with a tailor to both FFT & User experience for both the client and the therapist
 ## What it does
 ### In app messaging
 Our app has a messaging feature, allowing you to talk to your parents / family freely, but giving you the help from our nurture buddy.
@@ -22,7 +29,7 @@ We had used up a lot of time prototyping, causing frontend issues when we eventu
 - Backend chat:
 We ended up facing many issues with the actual AI portion of the app, causing us to have to rethink the backend a few times
 - Look / Feel
-We iterated on our design a lot, since we needed to make our UI functional, but also sleek and clean to ==feel nice to use==
+We iterated on our design a lot, since we needed to make our UI functional, but also sleek and clean to feel nice to use
 
 ## Accomplishments that we're proud of
 - Finishing all of this on time 
@@ -35,6 +42,11 @@ We learnt many things along the way, such as:
 - Connectivity from backend -> Frontend (Flask)
 - Sleek app development (Got inspo from whatsapp)
 - All about FFT and it's problems, as well as the areas we can improve upon it using nurture
-
 ## What's next for Nurture
-Full chat implimentation. As of right now, we cannot chat with ppl inside the app, although the AI still works. In the future we can impliment this and faurther improve upon some of the features such as our calendar and journalling
+Full chat implimentation. As of right now, we cannot chat with ppl inside the app, although the AI still works. In the future we can impliment this and faurther improve upon some of the features such as our calendar and journalling.
+## Image showcase:
+![image1](Insights.png)
+![image2](Notesopen.png)
+![image3](Suggestion.png)
+![image4](journal.png)
+![image5](msglearn.png)
