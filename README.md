@@ -3,7 +3,10 @@
 - Use our app with your therapist
 - Using sentiment analysis : get personalized recommendations for your messages
 - Access tools and info for FFT
-  
+
+## How to use the app
+If you are using our [vercell app](https://nurture-black.vercel.app/) or running the github repo off of localhost, it is best practice to use a display size of : 398, 743. The vercell app works on all display sizes, but is specifically built for an Iphone 14 (398, 743)
+
 # Details.
 ## Inspiration
 We got inspired from common chat platforms such as facebook, messenger and instagram. 
