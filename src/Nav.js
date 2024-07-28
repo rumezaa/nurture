@@ -7,7 +7,7 @@ import JournalIcon from "./icons/JournalIcon";
 export default function Nav({ selected }) {
   const Circle = ({selected}) => {
     return (
-      <div className={`rounded-full h-16 w-16 ${ selected ? "bg-accent-purple" : "bg-light-purple" } flex justify-center items-center mb-2`}>
+      <div className={`rounded-full h-16 w-16 ${ selected ? "bg-accent-purple" : "bg-light-purple" } flex justify-center items-center mb-4`}>
         <div
           style={{ backgroundImage: `url(${ChatIcon})` }}
           className="w-10 h-10 bg-no-repeat bg-cover"
