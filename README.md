@@ -1,12 +1,12 @@
 # Introducing nurture
 ![ol](oneliner.png)
 - Use our app with your therapist
-- Using sentiment analysis : get personalized reccomendations for your messages
+- Using sentiment analysis : get personalized recommendations for your messages
 - Access tools and info for FFT
   
 # Details.
 ## Inspiration
-We got inspired from common chat platforms such as facebook, messanger and instagram. 
+We got inspired from common chat platforms such as facebook, messenger and instagram. 
 Although, we decided to put our own spin on it, creating a chat platform that better integrates with the alberta health system.
 We also got inspired from therapy platforms such as betterhelp, with a tailor to both FFT & User experience for both the client and the therapist
 ## What it does
@@ -36,7 +36,7 @@ We iterated on our design a lot, since we needed to make our UI functional, but 
 ## Accomplishments that we're proud of
 - Finishing all of this on time 
   - Building a full functional app in under 24 hours
-- Our cordination was strong, Rumeza was a strong project manager, meaning there was always something we could all work on
+- Our coordination was strong, Rumeza was a strong project manager, meaning there was always something we could all work on
 ## What we learned
 We learnt many things along the way, such as:
 - Time management
@@ -45,7 +45,7 @@ We learnt many things along the way, such as:
 - Sleek app development (Got inspo from whatsapp)
 - All about FFT and it's problems, as well as the areas we can improve upon it using nurture
 ## What's next for Nurture
-Full chat implementation. As of right now, we cannot chat with ppl inside the app, although the AI still works. In the future we can implement this and faurther improve upon some of the features such as our calendar and journalling.
+Full chat implementation. As of right now, we cannot chat with ppl inside the app, although the AI still works. In the future we can implement this and further improve upon some of the features such as our calendar and journaling.
 ## Image showcase:
 ![image1](Insights.png)
 ![image2](Notesopen.png)
