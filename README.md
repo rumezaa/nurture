@@ -50,3 +50,4 @@ Full chat implimentation. As of right now, we cannot chat with ppl inside the ap
 ![image3](Suggestion.png)
 ![image4](journal.png)
 ![image5](msglearn.png)
+![image6](messageselect.png)
