@@ -18,7 +18,7 @@ function Home() {
   return (
     <div className="h-screen bg-base-purple flex flex-col content-start">
       <div
-        className="w-screen h-5/6 px-10 gap-4"
+        className="w-screen h-5/6 px-10 flex flex-col gap-y-4"
         style={{ marginBottom: "2rem" }}
       >
         <div
