@@ -8,6 +8,7 @@ import CityBoyJJ from "./images/CityboyJJ.png";
 import Therapist from "./images/Therapist.png";
 import Logo from "./images/Logo.svg";
 import GenButton from "./images/GenerateButton.svg";
+import { MESSAGING } from "./data_set/modal_data";
 import { useLocation, useNavigate } from "react-router-dom";
 
 function MessageScreen() {
@@ -18,6 +19,7 @@ function MessageScreen() {
   const [read, setRead] = useState(false);
   const [messages, setMessages] = useState([]);
   const [currentMessage, setCurrentMessage] = useState("");
+  const [messageCounter, setMessageCounter] = useState(0)
 
   const toggleModal = () => {
     setIsModalOpen((prev) => !prev);
@@ -49,12 +51,13 @@ function MessageScreen() {
 
     // Clear the input field
     setCurrentMessage("");
+    setMessageCounter(messageCounter<5 ? (messageCounter + 1) : 4)
 
     
     setTimeout(() => {
       setMessages((prevMessages) => [
         ...prevMessages,
-        { sender: "gpt", text: "Please try understanding" }
+        { sender: "gpt", text: MESSAGING[messageCounter] }
       ]);
     }, 1000);
   };
