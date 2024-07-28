@@ -21,8 +21,13 @@ app.add_middleware(
 )
 
 # Hugging Face API setup
+
+DATABASE_URL="sqlite:///./test.db"
+OPENAI_API_KEY="sk-proj-CcERZWmHSMfWAKEYLkvFT3BlbkFJQM7Z0fAMq1kesVMsPBMC"
+HUGGINGFACE_API_KEY="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"
+
 API_URL = "https://api-inference.huggingface.co/models/facebook/blenderbot-400M-distill"
-api_key = os.getenv('HUGGINGFACE_API_KEY')
+api_key = HUGGINGFACE_API_KEY
 print(f"API Key: {api_key}")  # Debugging line
 headers = {"Authorization": f"Bearer {api_key}"}
 

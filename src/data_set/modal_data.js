@@ -41,3 +41,14 @@ export const MODAL = {
     },
   ],
 };
+
+
+
+export const MESSAGING = [
+  "Yeah I actually wanted to go out with friends",
+  "There’s nothing to do and school hasn’t started",
+  "Listen, it’s my last summer, let me enjoy it please",
+  "Fine, I’ll just not go",
+  "Whatever you say...",
+  "I’m listening, I’ll stay home"
+]

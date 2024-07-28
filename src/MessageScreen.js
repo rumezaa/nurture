@@ -8,6 +8,7 @@ import CityBoyJJ from "./images/CityboyJJ.png";
 import Therapist from "./images/Therapist.png";
 import Logo from "./images/Logo.svg";
 import GenButton from "./images/GenerateButton.svg";
+import { MESSAGING } from "./data_set/modal_data";
 import { useLocation, useNavigate } from "react-router-dom";
 
 function MessageScreen() {
@@ -16,6 +17,9 @@ function MessageScreen() {
   const [isTyping, setIsTyping] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [read, setRead] = useState(false);
+  const [messages, setMessages] = useState([]);
+  const [currentMessage, setCurrentMessage] = useState("");
+  const [messageCounter, setMessageCounter] = useState(0)
 
   const toggleModal = () => {
     setIsModalOpen((prev) => !prev);
@@ -29,6 +33,33 @@ function MessageScreen() {
     if (!document.activeElement.classList.contains("focus-visible")) {
       setIsTyping(false);
     }
+  };
+
+  const handleInputChange = (e) => {
+    setCurrentMessage(e.target.value);
+  };
+
+  const handleSendMessage = () => {
+
+    if (currentMessage.trim() === "") return;
+    
+    // Add the new message to the messages state
+    setMessages((prevMessages) => [
+      ...prevMessages,
+      { sender: "user", text: currentMessage }
+    ]);
+
+    // Clear the input field
+    setCurrentMessage("");
+    setMessageCounter(messageCounter<5 ? (messageCounter + 1) : 4)
+
+    
+    setTimeout(() => {
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        { sender: "gpt", text: MESSAGING[messageCounter] }
+      ]);
+    }, 1000);
   };
 
   // Component for the messaging input and buttons
@@ -47,11 +78,16 @@ function MessageScreen() {
           className="flex-1 px-2 py-2 text-gray-800 bg-t-purple focus:outline-none"
           onFocus={handleInputFocus}
           onBlur={handleInputBlur}
+          value={currentMessage}
+          onChange={handleInputChange}
         />
-        <div className="bg-gray rounded-full flex justify-center w-12">
+        <div
+          className="bg-gray rounded-full flex justify-center w-12"
+          onClick={handleSendMessage}
+        >
           <div
             style={{ backgroundImage: `url(${SendIcon})` }}
-            className="w-8 h-8 bg-no-repeat bg-cover"
+            className="w-8 h-8 bg-no-repeat bg-cover cursor-pointer"
           />
         </div>
       </div>
@@ -60,7 +96,22 @@ function MessageScreen() {
 
   // Component for the messaging body
   const MessagingBody = () => {
-    return <div className="h-5/6"></div>;
+    return (
+      <div className="flex-1 overflow-y-auto p-4">
+        {messages.map((message, index) => (
+          <div
+            key={index}
+            className={`flex ${message.sender === "user" ? "justify-end" : "justify-start"}`}
+          >
+            <div
+              className={`p-2 rounded-lg max-w-xs mb-1 ${message.sender === "user" ? "bg-accent-purple text-white" : "bg-light-gray text-gray-800"}`}
+            >
+              {message.text}
+            </div>
+          </div>
+        ))}
+      </div>
+    );
   };
 
   // Modal component
