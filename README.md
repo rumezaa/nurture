@@ -34,7 +34,7 @@ We iterated on our design a lot, since we needed to make our UI functional, but 
 ## Accomplishments that we're proud of
 - Finishing all of this on time 
   - Building a full functional app in under 24 hours
-- Our cordination was strong, rumezza was a strong project manager, meaning there was always something we could all work on
+- Our cordination was strong, rumeza was a strong project manager, meaning there was always something we could all work on
 ## What we learned
 We learnt many things along the way, such as:
 - Time management
