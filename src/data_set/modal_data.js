@@ -41,3 +41,12 @@ export const MODAL = {
     },
   ],
 };
+
+
+
+export const MESSAGING = [
+  {sender: "you", text: "Hey son, what do you need to do again today, anything important?" },
+  {sender: "son", text: "Yeah I actually wanted to go out with friends" },
+  {sender: "son", text: "Yeah I actually wanted to go out with friends" },
+
+]
