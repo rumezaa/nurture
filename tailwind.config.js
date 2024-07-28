@@ -5,7 +5,8 @@ module.exports = {
     colors: {
       "base-purple": '#E7DCF0',
       "accent-purple": '#815FB6',
-      "secondary-purple": `#B49ED3`,
+      "s-purple": `#B49ED3`,
+      "t-purple": "#F1E9F6",
       'white': '#ffffff',
       'purple': '#3f3cbb',
       'midnight': '#121063',

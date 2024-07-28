@@ -23,6 +23,10 @@ export default function Nav({selected}) {
   const goNotes = () => {
     window.location.href = "/notes"
   }
+
+  const goMessages = () => {
+    window.location.href = "/messages"
+  }
   return (
     <div
       style={{ backgroundImage: `url(${NavImg})` }}
@@ -33,7 +37,7 @@ export default function Nav({selected}) {
         <h3 className="text-accent-purple text-center font-light">Home</h3>
       </div>
 
-      <div className="absolute top-4">
+      <div className="absolute top-4" onClick={goMessages}>
         <Circle />
       </div>
       <div className="flex flex-col justify-center items-center" onClick={goNotes}>
