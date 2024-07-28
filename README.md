@@ -18,10 +18,12 @@ We also integrate the therapy schedule in the app so that you can keep track of 
 Additionally we have a journal directly integrated in the app so that you can keep track of your thoughts, but still give your therapist access.
 Finally we have a note logging system, so you can read & review notes from your past therapy sessions 
 ## How we built it
-We built the app using both react and tailwind, as a way to combine NLP with a sleek frontend design.
-We started by prototyping our app using [figma prototypes ](https://www.figma.com/proto/dsVD8kFH7cPx6X8jCyQUmv/Acurve-Health-Hack?node-id=65-3364&t=k34fU8kmvyZkuPWH-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1)
+We built the app using both react and tailwind, as a way to combine our openAI based NLP model with a sleek frontend design.
+We started by prototyping our app using [figma prototypes](https://www.figma.com/proto/dsVD8kFH7cPx6X8jCyQUmv/Acurve-Health-Hack?node-id=65-1179&t=uhHz3A6Ll2D0Pn3s-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1)
 Then we implimented the design into the frontend (react), with our AI portion on the backend (tailwind)
 We used flask as a way to connect the backend and frontend.
+
+All things we used : Flask, React, OpenAIapi, python
 
 ## Challenges we ran into
 - Time: 
